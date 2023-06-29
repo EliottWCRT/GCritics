@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    <title>Dossier Projet</title>
+</head>
+<body>
+  <header class="fter" class="text-light">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-md-3 d-flex justify-content-center">
+          <img id="logo" src="asset/GCritics.png" alt="Logo" class="img-fluid" style="width:20%;" />
+        </div>
+        <div class="col-md-3"></div>
+        <div class="col-md-3">
+          <form class="form-inline">
+            <div class="input-group">
+              <div class="search-container">
+                <input type="text" placeholder="Rechercher..." style="color: white;" />
+                <button type="submit">
+                  <img
+                    id="loupe"
+                    src="asset/loupe-2.png"
+                    alt="recherche"
+                    class="img-fluid"
+                    style="width: 8%; filter: invert(1);"
+                  />
+                </button>
+              </div>
+            </div>
+          </form>
+        </div>
+        <div class="col col-md-3">
+          <a id="profilhead" class="mx-3 d-flex" href="{{url('/panier')}}">
+            <img src="asset/man.png" style="width:15%">
+          </a>
+        </div>
+      </div>
+    </div>
+  </header>
+  
+       
+    <div id="carouselExampleCaptions" class="carousel slide">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active" data-bs-interval="10000">
+            <img src="asset/COD.jpg" class="d-block w-100" alt="COD">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Call of Duty Modern Warfare</h5>
+              <p>Activision</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="asset/jedi.jpg" class="d-block w-100" alt="Jedi">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Jedi : Survivor</h5>
+              <p>EA Game / DICE</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="asset/High.jpg" class="d-block w-100" alt="High">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>High On Life</h5>
+              <p>Squanch Games</p>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+</div>
+<br>
+<h2 class="d-inline align-middle">Les Nouveautés :</h2>
+<button type="button" class="btn btn-primary d-inline align-middle float-end" style="margin-right: 60px; background-color: #1e325b; border: #1e325b;" onclick="window.location.href='news.html';">Tout Voir</button>
+<br> <br>
+<div class="container">
+    <div class="row">
+      <div class="col-md-6 col-lg-3 mb-4">
+        <div class="card">
+          <img src="asset/mafia.jpg" class="card-img-top" alt="mafia">
+          <div class="card-body">
+            <h5 class="card-title">Mafia</h5>
+            <p class="card-text">2k Games</p>
+            <p class="card-text"><small class="text-muted">Note : 80%</small></p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-3 mb-4">
+        <div class="card">
+          <img src="asset/cup.jpg" class="card-img-top" alt="Cuphead">
+          <div class="card-body">
+            <h5 class="card-title">Cuphead</h5>
+            <p class="card-text">MDHR</p>
+            <p class="card-text"><small class="text-muted">Note : 75%</small></p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-3 mb-4">
+        <div class="card">
+          <img src="asset/spiderman.jpg" class="card-img-top" alt="Spiderman">
+          <div class="card-body">
+            <h5 class="card-title">Spiderman</h5>
+            <p class="card-text">Insomniac</p>
+            <p class="card-text"><small class="text-muted">Note : 85%</small></p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-3 mb-4">
+        <div class="card">
+          <img src="asset/fallout.png" class="card-img-top" alt="Fallout">
+          <div class="card-body">
+            <h5 class="card-title">Fallout 4</h5>
+            <p class="card-text">Bethesda</p>
+            <p class="card-text"><small class="text-muted">Note : 70%</small></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <br>
+      <h2 class="d-inline align-middle">Prochaines sorties :</h2>
+      <button type="button" class="btn btn-primary d-inline align-middle float-end" style="margin-right: 60px; background-color: #1e325b; border: #1e325b;" onclick="window.location.href='next.html';">Tout Voir</button>
+<br><br>
+<div class="container">
+    <div class="row">
+      <div class="col-md-6 col-lg-3 mb-4">
+        <div class="card">
+          <img src="asset/AC.jpg" class="card-img-top" alt="AC">
+          <div class="card-body">
+            <h5 class="card-title">Assassin Creed : Mirage</h5>
+            <p class="card-text">Ubisoft</p>
+            <p class="card-text"><small class="text-muted">Note : 94%</small></p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-3 mb-4">
+        <div class="card">
+          <img src="asset/zelda.jpg" class="card-img-top" alt="Zelda">
+          <div class="card-body">
+            <h5 class="card-title">Zelda : Tears of Kingdom</h5>
+            <p class="card-text">Nintendo</p>
+            <p class="card-text"><small class="text-muted">Note : 72%</small></p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-3 mb-4">
+        <div class="card">
+          <img src="asset/diablo.jpg" class="card-img-top" alt="Diablo">
+          <div class="card-body">
+            <h5 class="card-title">Diablo IV</h5>
+            <p class="card-text">Blizzard</p>
+            <p class="card-text"><small class="text-muted">Note : 88%</small></p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-3 mb-4">
+        <div class="card">
+          <img src="asset/street fighter.jpg" class="card-img-top" alt="SF">
+          <div class="card-body">
+            <h5 class="card-title">Street Fighter 6</h5>
+            <p class="card-text">Konami</p>
+            <p class="card-text"><small class="text-muted">Note : 81%</small></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <br>
+      <h2 class="d-inline align-middle">Les meilleurs utilisateurs :</h2>
+      <button type="button" class="btn btn-primary d-inline align-middle float-end" style="margin-right: 60px; background-color: #1e325b; border: #1e325b;" onclick="window.location.href='user.html';">Tout Voir</button>
+  <br><br>
+  <div class="container" style="width:80%;">
+      <div class="row">
+        <div class="col-md-6 col-lg-3 mb-4">
+          <div class="card">
+            <img src="asset/Xbox1.jpg" class="card-img-top rounded-circle" alt="User1">
+            <div class="card-body">
+              <h5 class="card-title">Utilisateur 4</h5>
+              <p class="card-text">"Critique incroyable"</p>
+              <p class="card-text"><small class="text-muted">12512 likes</small></p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3 mb-4">
+          <div class="card">
+            <img src="asset/Xbox2.jpg" class="card-img-top rounded-circle" alt="User2">
+            <div class="card-body">
+              <h5 class="card-title">Utilisateur 2</h5>
+              <p class="card-text">"Critique exceptionnelle"</p>
+              <p class="card-text"><small class="text-muted">10811 likes</small></p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3 mb-4">
+          <div class="card">
+            <img src="asset/Xbox3.png" class="card-img-top rounded-circle" alt="User3">
+            <div class="card-body">
+              <h5 class="card-title">Utilisateur 3</h5>
+              <p class="card-text">"Critique hors du commun"</p>
+              <p class="card-text"><small class="text-muted">9633 likes</small></p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3 mb-4">
+          <div class="card">
+            <img src="asset/Xbox4.png" class="card-img-top rounded-circle" alt="User4">
+            <div class="card-body">
+              <h5 class="card-title">Utilisateur 4</h5>
+              <p class="card-text">"Critique extraordinaire"</p>
+              <p class="card-text"><small class="text-muted">7489 likes</small></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  <br>
+<footer class="fter" style="color: white;">
+  <br>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <h3>À propos de nous</h3>
+          <p>Nous sommes un site web qui propose des revu de jeux-vidéos</p>
+        </div>
+        <div class="col-md-3">
+          <h3>Liens utiles</h3>
+          <ul class="list-unstyled">
+            <li><a href="#">Accueil</a></li>
+            <li><a href="propos.html">À propos</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Blog</a></li>
+          </ul>
+        </div>
+        <div class="col-md-3">
+          <h3>Contactez-nous</h3>
+          <ul class="list-unstyled">
+            <li><a href="#">Téléphone : 01 23 45 67 89</a></li>
+            <li><a href="#">Email : contact@entreprise.com</a></li>
+            <li><a href="#">Adresse : 123 rue du chateau, Caen</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+  
+</body>
+</html>
